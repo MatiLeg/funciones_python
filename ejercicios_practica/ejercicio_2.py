@@ -27,6 +27,14 @@ def promedio(numeros):
     # La función debe contemplar si se le pasa una lista vacia
     # (es decir, de "0" elementos)
 
+    sumatoria_numeros = sum(numeros)
+    cantidad_numeros = len(numeros)
+
+    if cantidad_numeros == 0:
+        resultado = 0
+    else:
+        resultado = sumatoria_numeros / cantidad_numeros
+
     return resultado
 
 
@@ -42,5 +50,6 @@ if __name__ == '__main__':
 
     # Luego imprimir en pantalla el valor resultante:
     # print(....)
+    print(resultado_promedio)
 
     print("terminamos")
